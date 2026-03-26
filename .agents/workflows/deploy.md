@@ -16,13 +16,13 @@ Run `/workflow:review` first. All ❌ checks must be resolved before deploying.
 ### Step 1 — Final checks
 ```bash
 # Check for any TypeErrors or lint issues
-npm run build
+sudo npm run build
 ```
 If build fails, fix errors and re-run before continuing.
 
 ### Step 2 — Test production build locally
 ```bash
-npm run preview
+sudo npm run preview
 ```
 Manually verify:
 - [ ] Main menu loads correctly
@@ -44,42 +44,19 @@ Use conventional commits format:
 - `refactor:` for code restructuring
 - `docs:` for documentation changes
 
-### Step 4A — Deploy to Netlify (recommended)
+### Step 4 — Deploy to Netlify
 ```bash
 # Install Netlify CLI if not present
-npm install -g netlify-cli
+sudo npm install -g netlify-cli
 
 # Build
-npm run build
+sudo npm run build
 
 # Deploy
 netlify deploy --prod --dir=dist
 ```
 Copy the live URL from the output.
 
-### Step 4B — Deploy to Vercel (alternative)
-```bash
-# Install Vercel CLI if not present
-npm install -g vercel
-
-# Deploy
-vercel --prod
-```
-
-### Step 4C — Deploy to GitHub Pages
-Add to `vite.config.js`:
-```js
-export default defineConfig({
-  base: '/pixel-arcade/', // your repo name
-  plugins: [react()],
-})
-```
-Then:
-```bash
-npm run build
-# Push dist/ to gh-pages branch
-git subtree push --prefix dist origin gh-pages
-```
 
 ### Step 5 — Post-deploy
 - [ ] Visit live URL and test all games
@@ -95,7 +72,9 @@ git subtree push --prefix dist origin gh-pages
 ⚡ Zero dependencies — React + Canvas API + Web Audio API only
 🎨 8-bit pixel art, soft pastels, pure dark mode
 
+[Post Content]
+
 [Live link here]
 
-#buildinpublic #AI #WebDev #React #AgenticAI #Antigravity
+#BuildWithAI #AI #WebDev #React #AgenticAI #Antigravity #Gemini #Claude
 ```
