@@ -1,0 +1,34 @@
+:root {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-tertiary: #0f3460;
+  --pastel-pink: #ffb3c6;
+  --pastel-blue: #a0c4ff;
+  --pastel-yellow: #ffd6a5;
+  --pastel-green: #caffbf;
+  --pastel-purple: #c77dff;
+  --pastel-mint: #9bf6ff;
+  --text-primary: #f0e6ff;
+  --text-dim: #8888aa;
+  --font-pixel: 'Press Start 2P', monospace;
+  --spacing-unit: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-pixel);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}

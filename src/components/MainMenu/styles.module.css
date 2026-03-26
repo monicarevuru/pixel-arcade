@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 60px;
+}
+
+.title {
+  font-size: 32px;
+  margin: 0;
+  display: flex;
+  gap: 4px;
+}
+
+.char {
+  color: var(--text-primary);
+  opacity: 0;
+  animation: blinkIn 0.2s steps(1) forwards;
+}
+
+/* Colors for title characters to cycle through pastel colors subtly? 
+   Or just blink up. The requirement just says letters blink in one by one. */
+@keyframes blinkIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.grid {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer {
+  font-size: 8px;
+  color: var(--text-dim);
+  margin-top: 40px;
+}
