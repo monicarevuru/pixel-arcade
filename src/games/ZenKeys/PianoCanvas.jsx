@@ -308,7 +308,7 @@ export default function PianoCanvas({ mode, onGameOver }) {
       if (mode === 'memory') {
         ctx.fillText('WATCH \u2192 REPEAT | +10 PER ROUND', 16, canvas.height - 16);
       } else {
-        ctx.fillText('PRESS A-L OR CLICK KEYS', 0, canvas.height);
+        ctx.fillText('PRESS A-L OR CLICK KEYS', 16, canvas.height - 16);
       }
     }
 

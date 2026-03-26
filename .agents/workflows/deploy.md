@@ -16,13 +16,13 @@ Run `/workflow:review` first. All ❌ checks must be resolved before deploying.
 ### Step 1 — Final checks
 ```bash
 # Check for any TypeErrors or lint issues
-sudo npm run build
+npm run build
 ```
 If build fails, fix errors and re-run before continuing.
 
 ### Step 2 — Test production build locally
 ```bash
-sudo npm run preview
+npm run preview
 ```
 Manually verify:
 - [ ] Main menu loads correctly
@@ -47,10 +47,10 @@ Use conventional commits format:
 ### Step 4 — Deploy to Netlify
 ```bash
 # Install Netlify CLI if not present
-sudo npm install -g netlify-cli
+npm install -g netlify-cli
 
 # Build
-sudo npm run build
+npm run build
 
 # Deploy
 netlify deploy --prod --dir=dist
