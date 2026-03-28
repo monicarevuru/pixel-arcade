@@ -63,18 +63,4 @@ Copy the live URL from the output.
 - [ ] Test on mobile browser
 - [ ] Copy live URL for LinkedIn post
 
-## LinkedIn Post Template
-```
-🎮 Built Pixel Arcade — a retro mini-game collection!
-
-✨ Two games: Zen Keys (piano memory game) + Asteroid Dodger
-🤖 Built using agentic AI with Antigravity IDE
-⚡ Zero dependencies — React + Canvas API + Web Audio API only
-🎨 8-bit pixel art, soft pastels, pure dark mode
-
-[Post Content]
-
-[Live link here]
-
-#BuildWithAI #AI #WebDev #React #AgenticAI #Antigravity #Gemini #Claude
 ```
